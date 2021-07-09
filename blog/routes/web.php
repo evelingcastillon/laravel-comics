@@ -25,9 +25,22 @@ Route::get('/characters', function () {
 
 /* Comic routes */
 Route::get('/comics', function () {
-    return view('comics');
+    $comics = config('comics.data');
+
+    return view('comics.index', compact('comics'));
 })->name('comics');
 
+Route::get('comics/{id}',  function ($id){
+    $comics = config('comics.data');
+
+    if (is_numeric($id) && $id < count($comics) && $id >= 0) {
+        $comic = $comics[$id];
+        return view('comics.show', compact('comic'));
+    } else {
+        abort(404);
+    }
+
+})->name('comic');
 
 /* Movies routes */
 Route::get('/movies', function () {

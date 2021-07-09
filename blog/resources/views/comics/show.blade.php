@@ -3,5 +3,8 @@
 @section('title', 'Comic DC Comics')
 
 @section('content')
-<h1>Comic</h1>
+<div class="comic">
+    <img src="{{$comic['thumb']}}" alt="">
+</div>
+
 @endsection
