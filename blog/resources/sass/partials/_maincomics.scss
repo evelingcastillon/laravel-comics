@@ -1,0 +1,48 @@
+#site_main{
+
+
+    background-color: $bg_main_color;
+    .container {
+        .title_comics {
+            display: inline-block;
+            background-color: $bg_primary;
+            color: $text_secondary;
+            padding: 0.7rem 1.8rem;
+            margin-top: -2rem;
+        }
+        .box_comic {
+            @include display_flex_center;
+            flex-wrap: wrap;
+            a {
+                width:calc(100% /6);
+                padding: 0.8rem 10px;
+                .img_comics {
+                    width: 150px;
+                    height:150px;
+                    overflow:hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+                p {
+                    text-transform: uppercase;
+                    color: $text_secondary;
+                    font-size: 11.7px;
+                    padding: 0.8rem 0;
+                }
+            }
+        }
+        .btn_lead_more {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            a {
+                font-size: 12px;
+                font-weight: 600;
+                padding: 0.7rem 2.7rem;
+                color: $text_secondary;
+                background-color: $bg_primary;
+            }
+        }
+    }
+}
