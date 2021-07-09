@@ -94,3 +94,26 @@ header .jumbotron {
   color: white;
   background-color: #0282F9;
 }
+#site_main .other_options {
+  padding: 2rem 0;
+  background-color: #0282F9;
+}
+#site_main .other_options .container {
+  display: flex;
+  justify-content: center;
+}
+#site_main .other_options .container .option {
+  display: flex;
+  align-items: center;
+  padding: 0 0.8rem;
+}
+#site_main .other_options .container .option img {
+  height: 60px;
+}
+#site_main .other_options .container .option .card {
+  width: 60px;
+}
+#site_main .other_options .container p {
+  font-size: 11px;
+  color: white;
+}

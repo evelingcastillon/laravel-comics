@@ -1,6 +1,4 @@
 #site_main{
-
-
     background-color: $bg_main_color;
     .container {
         .title_comics {
@@ -42,6 +40,28 @@
                 padding: 0.7rem 2.7rem;
                 color: $text_secondary;
                 background-color: $bg_primary;
+            }
+        }
+    }
+    .other_options {
+        padding: 2rem 0;
+        background-color: $bg_primary;
+        .container {
+            display: flex;
+            justify-content: center;
+            .option {
+                @include display_flex_center;
+                padding: 0 0.8rem;
+                img{
+                    height: 60px;
+                }
+                .card {
+                    width: 60px;
+                }
+            }
+            p {
+                font-size: 11px;
+                color: $text_secondary;
             }
         }
     }
