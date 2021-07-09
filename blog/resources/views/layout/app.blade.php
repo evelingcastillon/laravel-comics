@@ -16,7 +16,10 @@
         <header id="site_header">
 
             <div class="primary_menu">
-                
+                <div class="container">
+                    <a href="#">DC POWER</a>
+                    <a href="#">ADDITIONAL DC SITE</a>
+                </div>
             </div>
 
             <div class="secondary_menu container">
@@ -39,6 +42,10 @@
                 <div class="search">
                     <input type="text" name="" id="" placeholder="Search">
                 </div>
+            </div>
+
+            <div class="jumbotron">
+                <img src="" alt="">
             </div>
         </header>
         <main id="site_main">

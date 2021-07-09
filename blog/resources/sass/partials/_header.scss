@@ -1,0 +1,38 @@
+header{
+    .primary_menu {
+        background-color: $bg_primary;
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            a {
+                color: $text_secondary;
+                font-size: 10px;
+            }
+        }
+    }
+    .secondary_menu {
+        @include display_flex_center;
+        justify-content: space-between;
+        height: 80px;
+        .logo {
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .main_menu {
+            a {
+                color: $text_tertiary;
+                font-size: 12px;
+                font-weight: 600;
+                margin: 0 0.5rem;
+            }
+        }
+
+    }
+    .jumbotron {
+        height: 350px;
+        background-image: url('../img/jumbotron.jpg');
+        background-size: cover;
+    }
+}
